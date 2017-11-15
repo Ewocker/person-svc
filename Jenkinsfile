@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('checkout') {
+    stage('Build') {
       steps {
-        sh 'ls -ltr'
+        sh 'mvn clean package'
       }
     }
   }
