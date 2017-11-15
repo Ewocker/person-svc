@@ -11,7 +11,7 @@ pipeline {
         sh 'mvn clean install'
       }
     }
-    stage('Testing') {
+    stage('Test') {
       steps {
         sh '''echo "i am a test"
 exit 0'''
