@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'mvn --quiet clean package'
+        sh 'mvn clean package'
       }
     }
   }
